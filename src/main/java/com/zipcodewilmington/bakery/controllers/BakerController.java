@@ -32,7 +32,6 @@ public class BakerController {
         return new ResponseEntity<>(service.update(id, baker), HttpStatus.OK);
     }
     @DeleteMapping("/baker/{id}")
-
     public ResponseEntity<Boolean> destroy(Long id) {
         return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
     }
